@@ -1,4 +1,7 @@
 # The scaffold for Flask based microservices with JWT authentications
+We will create two docker images:
+* One holding our flask app 
+* Second one two host the mongodb database 
 To run the docker images you need docker, then simply:
 ```bash
 make build
