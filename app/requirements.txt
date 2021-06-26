@@ -5,6 +5,7 @@ mongoengine-goodjson
 flask-restful
 flask-bcrypt
 flask-jwt-extended
+flask-cors
 pylint
 black
 prometheus-flask-exporter

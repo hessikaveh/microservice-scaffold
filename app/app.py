@@ -6,12 +6,14 @@ from database.db import initialize_db
 from resources.routes import initialize_routes
 from flask_jwt_extended import JWTManager
 from prometheus_flask_exporter import RESTfulPrometheusMetrics
+from flask_cors import CORS
 import logging
 logging.basicConfig(filename='example.log',level=logging.DEBUG)
 
 app = Flask(__name__)
 app.config.from_envvar('ENV_FILE_LOCATION')
 
+CORS(app)
 api = Api(app)
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
