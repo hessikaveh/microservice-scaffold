@@ -5,6 +5,7 @@ import os
 from database.db import initialize_db
 from resources.routes import initialize_routes
 from flask_jwt_extended import JWTManager
+from prometheus_flask_exporter import RESTfulPrometheusMetrics
 import logging
 logging.basicConfig(filename='example.log',level=logging.DEBUG)
 
@@ -14,6 +15,7 @@ app.config.from_envvar('ENV_FILE_LOCATION')
 api = Api(app)
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
+metric = RESTfulPrometheusMetrics(app, api)
 
 ENVIRONMENT_MONGO_USER = os.environ.get("MONGO_ADMIN_USER", "root")
 ENVIRONMENT_MONGO_PASS = os.environ.get("MONGO_ADMIN_PASS", "Secret")

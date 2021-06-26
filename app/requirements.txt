@@ -7,3 +7,4 @@ flask-bcrypt
 flask-jwt-extended
 pylint
 black
+prometheus-flask-exporter
