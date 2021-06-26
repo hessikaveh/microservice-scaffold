@@ -5,7 +5,8 @@ We will create a docker ecosystem:
 * Second one to host the mongodb database 
 * A docker image for Prometheus metrics
 * And finally a Grafana docker image to show the activity and load
-To run the docker images you need docker, then simply:
+
+###### To run the docker images you need docker, then simply:
 ```bash
 make build
 make run 
