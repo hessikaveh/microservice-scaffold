@@ -16,3 +16,10 @@ The Grafana dashboard then can be found in the following address
 http://localhost:3000/d/_eX4mpl3
 ```
 ![Example](grafana03.png)
+
+# Test the endpoints
+Using the index.html in the test folder, one can run a couple of tests:
+* Signing Up
+* Logging in 
+* and finally adding items to the database by pressing on the post button  
+![Example](webpage.png)
